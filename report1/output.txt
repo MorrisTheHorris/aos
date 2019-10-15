@@ -1,0 +1,23 @@
+7f70b57a0000-7f70b57c2000 r--p 00000000 00:00 90171              /lib/x86_64-linux-gnu/libc-2.28.so
+7f70b57c2000-7f70b590a000 r-xp 00022000 00:00 90171              /lib/x86_64-linux-gnu/libc-2.28.so
+7f70b590a000-7f70b5956000 r--p 0016a000 00:00 90171              /lib/x86_64-linux-gnu/libc-2.28.so
+7f70b5956000-7f70b5957000 ---p 00022194 00:00 90171              /lib/x86_64-linux-gnu/libc-2.28.so
+7f70b5957000-7f70b595b000 r--p 001b6000 00:00 90171              /lib/x86_64-linux-gnu/libc-2.28.so
+7f70b595b000-7f70b595d000 rw-p 001ba000 00:00 90171              /lib/x86_64-linux-gnu/libc-2.28.so
+7f70b595d000-7f70b5961000 rw-p 00000000 00:00 0
+7f70b5970000-7f70b5972000 rw-p 00000000 00:00 0
+7f70b5990000-7f70b5991000 r--p 00000000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b5991000-7f70b59ae000 r-xp 00001000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b59ae000-7f70b59af000 r-xp 0001e000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b59af000-7f70b59b6000 r--p 0001f000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b59b6000-7f70b59b7000 r--p 00026000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b59b7000-7f70b59b8000 r--p 00026000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b59b8000-7f70b59b9000 rw-p 00027000 00:00 90166              /lib/x86_64-linux-gnu/ld-2.28.so
+7f70b59b9000-7f70b59ba000 rw-p 00000000 00:00 0
+7f70b59c1000-7f70b59c2000 r--p 00000000 00:00 697686             /mnt/c/Users/hs/Documents/utokyo/aos/report1/vma
+7f70b59c2000-7f70b59c3000 r-xp 00001000 00:00 697686             /mnt/c/Users/hs/Documents/utokyo/aos/report1/vma
+7f70b59c3000-7f70b59c4000 r--p 00002000 00:00 697686             /mnt/c/Users/hs/Documents/utokyo/aos/report1/vma
+7f70b59c4000-7f70b59c5000 r--p 00002000 00:00 697686             /mnt/c/Users/hs/Documents/utokyo/aos/report1/vma
+7f70b59c5000-7f70b59c6000 rw-p 00003000 00:00 697686             /mnt/c/Users/hs/Documents/utokyo/aos/report1/vma
+7ffff92c6000-7ffff9ac6000 rw-p 00000000 00:00 0                  [stack]
+7ffffa0c0000-7ffffa0c1000 r-xp 00000000 00:00 0                  [vdso]
