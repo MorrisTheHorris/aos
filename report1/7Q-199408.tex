@@ -1,0 +1,46 @@
+\documentclass{article}
+    \usepackage[a4paper]{geometry}
+    \usepackage{amsmath}
+    \usepackage{listings}
+    \usepackage{graphicx}
+    \usepackage{color}
+    \definecolor{myblue}{rgb}{0.1,0.4,0.9}
+    \definecolor{mygrey}{rgb}{0.4,0.4,0.4}
+    \definecolor{myorange}{rgb}{1.0,0.4,0}
+
+    \tolerance=1
+    \emergencystretch=\maxdimen
+    \hyphenpenalty=10000
+    \hbadness=10000
+    \allowdisplaybreaks[1]
+    \setlength\parindent{0pt}
+    \lstset{
+        basicstyle=\footnotesize\ttfamily,
+        breaklines=true,
+        frame=single,
+        numbers=left,
+        numbersep=5pt,
+        numberstyle=\tiny\color{mygrey},
+        commentstyle=\color{mygrey},
+        emph={int,char,double,float,unsigned},
+        emphstyle=\color{myblue},
+        stringstyle=\color{myorange},
+        keywordstyle=\color{myblue}
+    }
+
+    \title{Advanced Operating Systems Report 1}
+    \author{SCOTT Harrison Jay}
+
+\begin{document}
+
+\maketitle
+
+\section{Source Code}
+\lstinputlisting[language=C]{vma.c}
+
+\clearpage
+
+\section{Output}
+\lstinputlisting{output.txt}
+
+\end{document}
