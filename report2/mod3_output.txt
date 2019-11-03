@@ -1,0 +1,2 @@
+<4>[  114.429857] [SLAB_TEST]Entering module.
+<4>[  114.434032] [SLAB_TEST]ptr1 = {42, 42} ; ptr2 = {43, 43}

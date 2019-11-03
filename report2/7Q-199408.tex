@@ -1,0 +1,93 @@
+\documentclass{article}
+    \usepackage[a4paper]{geometry}
+    \usepackage{amsmath}
+    \usepackage{listings}
+    \usepackage{graphicx}
+    \usepackage{color}
+    \definecolor{myblue}{rgb}{0.1,0.4,0.9}
+    \definecolor{mygrey}{rgb}{0.4,0.4,0.4}
+    \definecolor{myorange}{rgb}{1.0,0.4,0}
+
+    \tolerance=1
+    \emergencystretch=\maxdimen
+    \hyphenpenalty=10000
+    \hbadness=10000
+    \allowdisplaybreaks[1]
+    \setlength\parindent{0pt}
+    \lstset{
+        basicstyle=\footnotesize\ttfamily,
+        breaklines=true,
+        frame=single,
+        numbers=left,
+        numbersep=5pt,
+        numberstyle=\tiny\color{mygrey},
+        commentstyle=\color{mygrey},
+        emph={int,char,double,float,unsigned},
+        emphstyle=\color{myblue},
+        stringstyle=\color{myorange},
+        keywordstyle=\color{myblue},
+        showstringspaces=false
+    }
+
+    \title{Advanced Operating Systems Report 2}
+    \author{SCOTT Harrison Jay}
+
+\begin{document}
+
+\maketitle
+
+Version 5.2.1 of the Linux Kernel was used for this report. No code changes were required to make the examples compile.
+
+\section{Low-level memory allocator}
+
+\subsection{Source Code}
+\lstinputlisting[language=C]{wk2_mod1.c}
+\subsection{Output}
+Some lines have been omitted
+\lstinputlisting[numbers=none]{mod1_output.txt}
+In summary, this module simply loads an array in low memory with 1024 integers in sequence, and prints them out in order. 1024 is simply the number of integers that fit inside a 4096 byte = 4KB page.
+
+\section{\texttt{kmalloc()} and \texttt{vmalloc()}}
+
+\subsection{Source Code}
+\lstinputlisting[language=C]{wk2_mod2.c}
+\subsection{Output}
+\lstinputlisting[numbers=none]{mod2_output.txt}
+In summary, this module uses \texttt{kmalloc} to request exponentially (powers of 2) larger regions of memory each time. It finally fails once a 8388608 byte = 8MB region is requested. A debug call trace is shown for us.
+
+\section{Slab layer}
+
+\subsection{Source Code}
+\lstinputlisting[language=C]{wk2_mod3.c}
+\subsection{Output}
+\lstinputlisting[numbers=none]{mod3_output.txt}
+In summary, this module uses the slab layer to create a cache, where two instances of a simple struct are allocated. The data is store and then printed to verify. The cache is then freed and destroyed.
+
+\section{High memory allocation}
+
+\subsection{Source Code}
+\lstinputlisting[language=C]{wk2_mod4.c}
+\subsection{Output}
+Some lines have been omitted
+\lstinputlisting[numbers=none]{mod4_output.txt}
+In summary, this module does the same thing as the first module, except high memory is used. The output is identical other than the print prefix.
+
+\section{Per-CPU allocation (static)}
+
+\subsection{Source Code}
+\lstinputlisting[language=C]{wk2_mod5.c}
+\subsection{Output}
+End of output omitted
+\lstinputlisting[numbers=none]{mod5_output.txt}
+In summary, this module creates 3 threads which run on different CPU cores (this was done on an emulated 16 core system) which simply count upwards. It is static, which means the per-CPU data structures are created at compile time. We can see the scheduler simply rotates control through each thread fairly in order and so we see 3 copies of each number in ascending order. 
+
+\section{Per-CPU allocation (dynamic)}
+
+\subsection{Source Code}
+\lstinputlisting[language=C]{wk2_mod6.c}
+\subsection{Output}
+End of output omitted
+\lstinputlisting[numbers=none]{mod6_output.txt}
+In summary, this module does the same thing as the previous except dynamically. What this means is the per-CPU data structures are created at runtime. The output is the same other than the fact that the 3 assigned CPU cores are different this time.
+
+\end{document}

@@ -1,0 +1,28 @@
+<4>[  702.793410] wk2_mod1: loading out-of-tree module taints kernel.
+<4>[  702.798554] wk2_mod1: module license 'unspecified' taints kernel.
+<4>[  702.802509] Disabling lock debugging due to kernel taint
+<4>[  702.816654] [LOWLEVEL]: Entering module.
+<4>[  702.819594] [LOWLEVEL]: array[0} = 0
+<4>[  702.821737] [LOWLEVEL]: array[1} = 1
+<4>[  702.823952] [LOWLEVEL]: array[2} = 2
+<4>[  702.825938] [LOWLEVEL]: array[3} = 3
+<4>[  702.827956] [LOWLEVEL]: array[4} = 4
+<4>[  702.830012] [LOWLEVEL]: array[5} = 5
+<4>[  702.832293] [LOWLEVEL]: array[6} = 6
+<4>[  702.834574] [LOWLEVEL]: array[7} = 7
+<4>[  702.836308] [LOWLEVEL]: array[8} = 8
+<4>[  702.837822] [LOWLEVEL]: array[9} = 9
+<4>[  702.839427] [LOWLEVEL]: array[10} = 10
+
+...
+
+<4>[  703.519830] [LOWLEVEL]: array[1014} = 1014
+<4>[  703.519965] [LOWLEVEL]: array[1015} = 1015
+<4>[  703.520058] [LOWLEVEL]: array[1016} = 1016
+<4>[  703.520174] [LOWLEVEL]: array[1017} = 1017
+<4>[  703.520307] [LOWLEVEL]: array[1018} = 1018
+<4>[  703.520508] [LOWLEVEL]: array[1019} = 1019
+<4>[  703.520610] [LOWLEVEL]: array[1020} = 1020
+<4>[  703.520739] [LOWLEVEL]: array[1021} = 1021
+<4>[  703.520918] [LOWLEVEL]: array[1022} = 1022
+<4>[  703.521049] [LOWLEVEL]: array[1023} = 1023

@@ -1,0 +1,27 @@
+<4>[  139.705359] wk2_mod4: module license 'unspecified' taints kernel.
+<4>[  139.709694] Disabling lock debugging due to kernel taint
+<4>[  139.717272] [HIGHMEM]: Entering module.
+<4>[  139.720341] [HIGHMEM]: array[0] = 0
+<4>[  139.722949] [HIGHMEM]: array[1] = 1
+<4>[  139.725556] [HIGHMEM]: array[2] = 2
+<4>[  139.728977] [HIGHMEM]: array[3] = 3
+<4>[  139.732241] [HIGHMEM]: array[4] = 4
+<4>[  139.734286] [HIGHMEM]: array[5] = 5
+<4>[  139.736453] [HIGHMEM]: array[6] = 6
+<4>[  139.738479] [HIGHMEM]: array[7] = 7
+<4>[  139.740676] [HIGHMEM]: array[8] = 8
+<4>[  139.742703] [HIGHMEM]: array[9] = 9
+<4>[  139.744317] [HIGHMEM]: array[10] = 10
+
+...
+
+<4>[  140.401773] [HIGHMEM]: array[1014] = 1014
+<4>[  140.401923] [HIGHMEM]: array[1015] = 1015
+<4>[  140.402084] [HIGHMEM]: array[1016] = 1016
+<4>[  140.402245] [HIGHMEM]: array[1017] = 1017
+<4>[  140.402394] [HIGHMEM]: array[1018] = 1018
+<4>[  140.402543] [HIGHMEM]: array[1019] = 1019
+<4>[  140.402692] [HIGHMEM]: array[1020] = 1020
+<4>[  140.402840] [HIGHMEM]: array[1021] = 1021
+<4>[  140.403066] [HIGHMEM]: array[1022] = 1022
+<4>[  140.403217] [HIGHMEM]: array[1023] = 1023
